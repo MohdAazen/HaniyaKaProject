@@ -1,0 +1,238 @@
+/* https://www.schemecolor.com/wallpaper?i=53742&desktop */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+
+    font-family: "Roboto", sansserif;
+    line-height: 1.6;
+}
+
+.number{
+    display: flex;
+    flex-direction: row-reverse;
+    padding: 1%;
+    background-color: #db3434;
+    color: #fff;
+
+}
+header {
+    width: 100%;
+    height: 150px;
+    background-color: #db3434;
+    color: #fff;
+    padding: 20px 2%;
+    display:  flex;
+    flex-wrap: wrap;
+    justify-content: start;
+}
+
+.image{
+    margin-left: 3%;
+    width: 20%;
+    height: 100%;
+    border-radius: 5%;
+}
+
+.image img{
+    width: 50%;
+    height: 100%;
+    border-radius: 50%;
+}
+nav {
+    width: 100%;
+    background-color: #FEDEA8;
+}
+
+nav ul {
+    list-style: none;
+    padding: 10px 0;
+    text-align: center;
+    display:  flex;
+    margin:0px;
+    justify-content: space-evenly;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+
+}
+
+nav a {
+    text-decoration: none;
+    color: #db3434;
+    font-weight: bold;
+}
+
+
+
+
+main{
+    width:100%;
+    height: 500px;
+    display:  flex;
+    justify-content: center;
+    /* border: solid 1px black; */
+
+}
+
+.banner{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    /* border: solid 1px black; */
+}
+
+.bannerImg{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    /* border: solid 1px black; */
+
+}
+
+.bannerImg img{
+    width: 100%;
+    height: 100%;
+    
+}
+
+.loginForm
+{
+    position: absolute;
+    margin-top:2% ;
+    margin-left: 48%;
+    width: 50%;
+    height: 60%;
+    /* border: 1px solid black; */
+    background-color:transparent;
+    border-radius: 2%;
+    padding: 2% ;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0.5);
+}
+
+
+.loginForm .form-title{
+    text-align: center;
+    font-size: 30px;
+    font-weight: 600;
+    color: #111;
+
+}
+
+
+
+.loginForm .form-input label, .loginForm .captcha label{
+    display: block;
+    font-size: 15px;
+    color: #000000;
+    font-weight: 600;
+    font-size: 20px;
+    margin-bottom: 1%;
+
+}
+
+.loginForm .form-input input{
+    width: 100%;
+    padding:10px;
+    border: 1px solid black;
+    font-size: 15px;
+    border-radius: 10px;
+
+}
+
+.loginForm .captcha{
+    margin: 15px 0px;
+}
+.loginForm .captcha .preview{
+    color: #555;
+    width:100%;
+    text-align: center;
+    height: 40px;
+    letter-spacing: 8px;
+    border: 1px solid #888;
+    font-family: "monospace";
+}
+
+.loginForm .captcha .preview span{
+    display: inline-block;
+    user-select: none;
+    
+}
+
+#captcha-form{
+    border-radius: 5px ;
+
+}
+
+.loginForm .captcha .captcha-form{
+    display: flex;
+}
+
+.loginForm .captcha .captcha-form input{
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #888;
+    
+}
+
+.loginForm input{
+    border: none;
+
+    
+}
+
+.captcha-refresh{
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    border-radius: 25%;
+} 
+
+.formButton{
+    margin: 2%;
+    margin-left:35% ;
+    width: 200px;
+    color: rgb(0, 0, 0);
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+section {
+    margin-bottom: 30px;
+}
+
+
+
+
+h2 {
+    color: #3498db;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+#contact a {
+    color: #fff;
+}
+
+#social-media a {
+    margin-right: 10px;
+}
+
+/* Responsive Design */
+@media screen and (max-width: 600px) {
+    nav li {
+        display: block;
+        margin-bottom: 10px;
+    }
+}
