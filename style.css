@@ -101,6 +101,7 @@ main{
 .bannerImg img{
     width: 100%;
     height: 100%;
+    opacity: 90%;
     
 }
 
@@ -127,8 +128,6 @@ main{
 
 }
 
-
-
 .loginForm .form-input label, .loginForm .captcha label{
     display: block;
     font-size: 15px;
@@ -149,16 +148,19 @@ main{
 }
 
 .loginForm .captcha{
+    width: 50%;
     margin: 15px 0px;
 }
+
 .loginForm .captcha .preview{
-    color: #555;
-    width:100%;
+    color: #000000;
     text-align: center;
+    font-size: x-large;
     height: 40px;
-    letter-spacing: 8px;
-    border: 1px solid #888;
+    letter-spacing: 18px;
+    border: 1px solid #323232;
     font-family: "monospace";
+    
 }
 
 .loginForm .captcha .preview span{
@@ -169,6 +171,9 @@ main{
 
 #captcha-form{
     border-radius: 5px ;
+    padding: 2%;
+    border: 1px solid black;
+
 
 }
 
@@ -180,19 +185,17 @@ main{
     width: 100%;
     padding: 8px;
     border: 1px solid #888;
-    
 }
 
 .loginForm input{
     border: none;
-
-    
 }
 
 .captcha-refresh{
     color: rgb(0, 0, 0);
     background-color: transparent;
     border-radius: 25%;
+    padding:0px 0.5% ;
 } 
 
 .formButton{
@@ -203,6 +206,21 @@ main{
     background-color: transparent;
     border-radius: 5px;
 }
+
+.captcha-refresh:hover,.formButton:hover
+{
+    transform: scale(1.2);
+    background-color: rgb(151, 151, 151);
+
+}
+
+.aboutUsInfo{
+    width: 100%;
+    border: 1px solid #000000;
+
+}
+
+
 
 section {
     margin-bottom: 30px;

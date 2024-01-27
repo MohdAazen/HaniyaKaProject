@@ -23,7 +23,7 @@
 
     <nav>
         <ul>
-            <li><a href="#about">About Us</a></li>
+            <li><a href="#aboutUs">About Us</a></li>
             <li><a href="#donate">How to Donate</a></li>
             <li><a href="#recepientinfo">Recepient Information</a></li>
             <li><a href="#stories">Stories</a></li>
@@ -35,8 +35,6 @@
 
 
     <main>
-
-
         <section class="banner">
             <div class="bannerImg">
                 <img src="https://t3.ftcdn.net/jpg/01/70/23/78/360_F_170237839_dbHJ3f0XRzdE2lBqawHRVpajlnCxw4AP.jpg" alt="banner">
@@ -45,36 +43,42 @@
                         
                        <div class="form-title">Login</div>
                         <div class="form-input">
-                            <label for="username">Username</label>
-                            <input type="text" id="username">
+                            <label for="username" ><i class="fa-solid fa-circle-user"></i>  Username</label>
+                            <input type="text" id="username" placeholder="Enter Username" required>
                         </div>
 
                         <div class="form-input">
-                            <label for="password">Password</label>
-                            <input type="password" id="password">
+                            <label for="password" ><i class="fa-solid fa-key"></i>  Password </label>
+                            <input type="password" placeholder="Enter Password" id="password" required>
                         </div>
 
                         <div class="captcha">
                         <label for="captcha-input">Enter Captcha</label>
-                        <div class="preview"></div>
+                        <div class="preview" id="captchaText">
+                            <div></div>
+                        </div>
                     </div>
                     
                     <div class="captcha-form">
                         <input type="text" id="captcha-form" placeholder="Enter the above Captcha"/>
-                        <button class="captcha-refresh"><i class="fa-solid fa-arrows-rotate arrow"></i></button>
+                        <button class="captcha-refresh" onclick="refreshCaptcha()"><i class="fa-solid fa-arrows-rotate arrow"></i></button>
 
                     </div>
                     <div>
-                        <button type="submit" id="#login-btn" class="formButton">Login</button>
+                        <button type="submit" id="#login-btn" onclick="validateCaptcha()" class="formButton">Login</button>
                     </div>
                     </form>
                 </div>
             </div>
         </section>
-
-      
     </main>
 
+    <section id="aboutUs" class="aboutUs">
+        <div class="aboutUsInfo">
+
+        </div>
+
+    </section>
 
     <footer>
         <section id="contact">
@@ -86,7 +90,7 @@
             <h2>Connect With Us</h2>
             <!-- Add social media icons and links -->
             <!-- Example: <a href="https://facebook.com/donatelife" target="_blank"><img src="facebook-icon.png" alt="Facebook"></a> -->
-        </section> -->
+        </section>
     </footer>
     
     <script src="script.js"></script>
@@ -95,7 +99,7 @@
 </body>
 </html>
 
-<!--   <!-- <section id="about">
+<!--    <section id="about">
             <h2>About Us</h2>
             <p>DonateLife.org is dedicated to promoting organ donation and saving lives. Learn about our mission and team.</p>
         </section>
@@ -103,7 +107,7 @@
         <section id="donate">
             <h2>How to Donate</h2>
             <p>Becoming an organ donor is a simple and impactful way to make a difference. Register now to save lives.</p>
-            <!-- Add a registration form here -->
+            Add a registration form here -->
             <!-- Example: <form action="/register" method="post"> ... </form> -->
         <!-- </section>
 
@@ -114,11 +118,10 @@
 
         <section id="faq">
             <h2>Frequently Asked Questions</h2>
-            <!-- Add a list of frequently asked questions and their answers -->
+          Add a list of frequently asked questions and their answers -->
             <!-- <ul>
                 <li><strong>Q:</strong> How can I become an organ donor?</li>
                 <li><strong>A:</strong> Visit our "How to Donate" section for detailed instructions.</li> --> -->
                 <!-- Add more FAQs -->
             <!-- </ul> -->
         </section>
-    -->
