@@ -13,11 +13,25 @@ body {
 
 .number{
     display: flex;
-    flex-direction: row-reverse;
     padding: 1%;
+    justify-content: right;
     background-color: #db3434;
-    color: #fff;
+    /* border: 1px solid black; */
+}
 
+.signButt{
+    border-radius: 10px;
+    background: transparent;
+    border-color: #fff;
+    padding: 3%;
+    margin: 5%;
+    width: 200%;
+}
+
+.number div{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
 }
 header {
     width: 100%;
@@ -219,7 +233,6 @@ main{
     border: 1px solid #000000;
 
 }
-
 
 
 section {

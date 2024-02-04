@@ -5,37 +5,40 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="signup.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
   </head>
   <body>
     <section class="wholePage">
       <form action="">
         <div class="nameOfPerson">
           <div>
-            <label for="fName">Name (As it appears on the Aadhaar Card)</label>
+            <label for="fName">Name (As it appears on the Aadhaar Card)</label><i class="fa-solid fa-asterisk fa-2xs" style="color: #b30000;"></i>
           </div>
           <div>
-            <input type="text" placeholder="First Name" id="fName" />
-            <input type="text" placeholder="Middle Name" id="mName" />
-            <input type="text" placeholder="Last Name" id="lName" />
+            <input type="text" placeholder="First Name" id="fName" required/>
+            <input type="text" placeholder="Middle Name" id="mName" required/>
+            <input type="text" placeholder="Last Name" id="lName" required />
           </div>
         </div>
 
         <div class="mfName">
           <div>
-            <label for="motherFatherName">Mother's/Father's Name</label>
+            <label for="motherFatherName">Mother's/Father's Name</label><i class="fa-solid fa-asterisk fa-2xs" style="color: #b30000;"></i>
           </div>
           <div>
             <input
               type="text"
               id="motherFatherName"
               placeholder="Mother's/Father's Name"
+              required
             />
           </div>
         </div>
 
         <div class="resaddress">
           <div>
-            <label for="address">Current Residential Address</label>
+            <label for="address">Current Residential Address</label><i class="fa-solid fa-asterisk fa-2xs" style="color: #b30000;"></i>
           </div>
           <div>
             <textarea
@@ -43,6 +46,7 @@
               placeholder="House Number/Flat Number, Society Name, Street, Landmark"
               rows="2"
               cols="150"
+              required
             ></textarea>
           </div>
         </div>
@@ -50,26 +54,26 @@
         <div class="citDisSta">
           <div>
             <div class="cit">
-              <label for="city">City</label>
+              <label for="city">City</label><i class="fa-solid fa-asterisk fa-2xs" style="color: #b30000;"></i>
             </div>
             <div>
-              <input type="text" name="city" placeholder="Enter the City name" id="city" />
+              <input type="text"  name="city" placeholder="Enter the City name" id="city" required/>
             </div>
           </div>
           <div>
             <div class="dis">
-              <label for="district">District</label>
+              <label for="district">District</label><i class="fa-solid fa-asterisk fa-2xs" style="color: #b30000;"></i>
             </div>
             <div>
-              <input type="text" name="district" placeholder="Enter the District name" id="district" />
+              <input type="text" name="district" placeholder="Enter the District name" id="district" required/>
             </div>
           </div>
           <div>
             <div class="sta">
-              <label for="state">State</label>
+              <label for="state">State</label><i class="fa-solid fa-asterisk fa-2xs" style="color: #b30000;"></i>
             </div>
             <div>
-              <input type="text" name="state" placeholder="Enter the State name" id="state" />
+              <input type="text" name="state" placeholder="Enter the State name" id="state" required/>
             </div>
           </div>
         </div>
@@ -77,28 +81,28 @@
         <div class="pinMobOcc">
           <div class="pin">
             <div>
-              <label for="pinCode">PIN Code</label>
+              <label for="pinCode">PIN Code</label><i class="fa-solid fa-asterisk fa-2xs" style="color: #b30000;"></i>
             </div>
             <div>
-              <input type="text" name="pinCode" placeholder="Enter the PIN Code"  id="pinCode" />
+              <input type="text" name="pinCode" placeholder="Enter the PIN Code"  id="pinCode" required/>
             </div>
           </div>
 
           <div class="mob">
             <div>
-              <label for="mobileNumber">Mobile Number</label>
+              <label for="mobileNumber">Mobile Number</label><i class="fa-solid fa-asterisk fa-2xs" style="color: #b30000;"></i>
             </div>
             <div>
-              <input type="text" name="mobileNumber" placeholder="Enter the Mobile Number"  id="mobileNumber" />
+              <input type="text" name="mobileNumber" placeholder="Enter the Mobile Number"  id="mobileNumber" required />
             </div>
           </div>
 
           <div class="occ">
             <div>
-              <label for="occupation">Occupation</label>
+              <label for="occupation">Occupation</label><i class="fa-solid fa-asterisk fa-2xs" style="color: #b30000;"></i>
             </div>
             <div>
-              <select name="occupation" id="occupation">
+              <select name="occupation" id="occupation" required>
                 <option value="Select" disabled selected>--Select--</option>
                 <option value="Option1">Option 1</option>
                 <option value="Option2">Option 2</option>
@@ -124,19 +128,19 @@
           </div>
           <div>
             <div>
-              <label for="calendar">Date Of Birth(DD/MM/YYYY)</label>
+              <label for="calendar">Date Of Birth(DD/MM/YYYY)</label><i class="fa-solid fa-asterisk fa-2xs" style="color: #b30000;"></i>
             </div>
             <div>
-              <input type="date" placeholder="Enter the Date Of Birth" name="email" id="calendar" />
+              <input type="date" placeholder="Enter the Date Of Birth" name="email" id="calendar" required/>
             </div>
           </div>
 
           <div class="age">
             <div>
-              <label for="age">Age</label>
+              <label for="age">Age</label><i class="fa-solid fa-asterisk fa-2xs" style="color: #b30000;"></i>
             </div>
             <div>
-              <input type="number" placeholder="Enter the Age"  name="age" min="18" max="60" id="age" />
+              <input type="number" placeholder="Enter the Age"  name="age" min="18" max="60" id="age" required />
             </div>
           </div>
         </div>
@@ -144,25 +148,24 @@
         <div class="genBloEme">
           <div>
             <div>
-              <label for="gender">Gender</label>
+              <label for="gender">Gender</label><i class="fa-solid fa-asterisk fa-2xs" style="color: #b30000;"></i>
             </div>
             <div>
-              <select name="gender" id="gender">
+              <select name="gender" id="gender" required>
                 <option value="none" disabled selected>--Select--</option>
                 <option value="male">Male</option>
                 <option value="female">Female</option>
                 <option value="Pref">Prefer Not to Say</option>
-
               </select>
             </div>
           </div>
 
           <div class="blo">
             <div>
-              <label for="bloodGroup">Blood Group</label>
+              <label for="bloodGroup">Blood Group</label><i class="fa-solid fa-asterisk fa-2xs" style="color: #b30000;"></i>
             </div>
             <div>
-              <select name="bloodGroup" id="bloodGroup">
+              <select name="bloodGroup" id="bloodGroup" required>
                 <option value="none" disabled selected>--Select--</option>
                 <option value="A+">A+</option>
                 <option value="A-">A-</option>
@@ -178,14 +181,15 @@
 
           <div>
             <div>
-              <label for="emergencyConName">Emergency Contact Name</label>
+              <label for="emergencyConName">Emergency Contact Name</label><i class="fa-solid fa-asterisk fa-2xs" style="color: #b30000;"></i>
             </div>
             <div>
               <input
-                type="number"
+                type="text"
                 name="emergencyConName"
                 placeholder="Enter the Emergency Contact Name"
                 id="emergencyConName"
+                required
               />
             </div>
           </div>
@@ -194,7 +198,7 @@
         <div class="emeEme">
           <div>
             <div>
-              <label for="emergencyConNum">Emergency Contact Number</label>
+              <label for="emergencyConNum">Emergency Contact Number</label><i class="fa-solid fa-asterisk fa-2xs" style="color: #b30000;"></i>
             </div>
             <div>
               <input
@@ -202,18 +206,20 @@
                 name="emergencyConNum"
                 placeholder="Emergency Contact Number"
                 id="emergencyConName"
+                required
               />
             </div>
           </div>
 
           <div>
             <div>
-              <label for="emergencyConAdd">Emergency Contact Address</label>
+              <label for="emergencyConAdd">Emergency Contact Address</label><i class="fa-solid fa-asterisk fa-2xs" style="color: #b30000;"></i>
             </div>
             <div>
               <textarea
                 placeholder="Emergency Contact Address"
                 id="emergencyConAdd"
+                required
               ></textarea>
             </div>
 
@@ -240,10 +246,10 @@
         <div class="idCardNum">
           <div>
             <div>
-              <label for="idCard">Choose Identity Card</label>
+              <label for="idCard">Choose Identity Card</label><i class="fa-solid fa-asterisk fa-2xs" style="color: #b30000;"></i>
             </div>
             <div>
-              <select name="idCard" id="idcard">
+              <select name="idCard" id="idcard" required>
                 <option value="Select" disabled selected>--Select--</option>
                 <option value="Option1">Option 1</option>
                 <option value="Option2">Option 2</option>
@@ -259,17 +265,17 @@
 
           <div class="idnOrg">
             <div>
-              <label for="idNumber">Identity Card Number</label>
+              <label for="idNumber">Identity Card Number</label><i class="fa-solid fa-asterisk fa-2xs" style="color: #b30000;"></i>
             </div>
             <div>
-              <input type="text" placeholder="Enter Identity Card Number" name="idNumber" id="idNumber" />
+              <input type="text" placeholder="Enter Identity Card Number" name="idNumber" id="idNumber" required />
             </div>
           </div>
         </div>
 
         <div class="orgDon">
           <div>
-            <label for="organsSelect">Organs that I wish to donate:</label>
+            <label for="organsSelect">Organs that I wish to donate <i class="fa-solid fa-asterisk fa-2xs" style="color: #b30000;"></i></label>
           </div>
           <div class="selOrg">
             <div>
@@ -361,6 +367,7 @@
                 name="sameAdd"
                 id="sameAdd"
                 class="samAdd"
+                required
               />
             </div>
             <div class="samLab">
@@ -378,6 +385,7 @@
                 name="sameAdd"
                 id="sameAdd"
                 class="samAdd"
+                required
               />
             </div>
             <div class="samLab">
@@ -388,10 +396,16 @@
           </div>
         </div>
           <p class="ensure">
-            <b>Note  :- </b> Please ensure your email address is correct to receive your Donor
+            <b>Note :- </b> Please ensure your email address is correct to receive your Donor
             Card.
           </p>
         
+
+          <div class="butHol">
+            <button type="submit" class="subForm">
+              Submit
+            </button>
+          </div>
       </form>
     </section>
   </body>

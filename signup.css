@@ -19,6 +19,8 @@ body{
     background-color: lightblue;
     display: flex;
     justify-content: center;
+    
+    
 }
 
 form{
@@ -28,6 +30,9 @@ form{
     padding-right: 2%;
 
 }
+
+
+
 b{
     color: red;
     font-weight: bold;
@@ -40,6 +45,7 @@ b{
     display: flex;
     flex-direction: column;
     width: 100%;
+
 }
 
 input,select,textarea{
@@ -167,4 +173,34 @@ label{
 
 .nameOfPerson label,.mfName label, .resaddress label,.citDisSta label,.pinMobOcc label, .orgDon label,.emaDobAge label, .genBloEme label,.emeEme label,.idCardNum label{
     margin: 1%;
+}
+
+.butHol
+{
+    /* border:  1px solid black; */
+    width: 102%;
+    display: flex;
+    justify-content: center;
+}
+
+.subForm{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 10%;
+    border-radius: 50px;
+    padding: 1%;
+    margin: 2%;
+    font-size: 100%;
+    font-weight: 600;
+    background-color: transparent;
+}
+
+.subForm:hover{
+    background-color: lightblue;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 10%;
+    border-radius: 50px;
+    padding: 1%;
+    margin: 2%;
+    font-size: 100%;
+    font-weight: 600;
 }

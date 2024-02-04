@@ -10,9 +10,12 @@
 </head>
 <body>
     
-    <div class="number">Toll-free No.:1234567890</div>
+    <div class="number">
+        <div>Toll-free No.:1234567890 <a href="signup.html"><button class="signButt">Sign Up</button></a></div>
+    </div>
     <header class="header">
         <div class="image">
+            
             <img src="https://i.pinimg.com/564x/f7/e0/61/f7e0614a713afdb820bcbfb6f9135eb9.jpg" alt="Oragan">
         </div>
         <div class="heading">
@@ -96,10 +99,36 @@
     <script src="script.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
 
+
+    <script>
+        window.addEventListener('load', () => {
+            registerSW();
+        });
+    
+        // Register the Service Worker
+        async function registerSW() {
+            if ('serviceWorker' in navigator) {
+                try {
+                    await navigator
+                        .serviceWorker
+                        .register('serviceworker.js');
+                }
+                catch (e) {
+                    console.log('SW registration failed');
+                }
+            }
+        }
+    </script>
 </body>
 </html>
 
 <!--    <section id="about">
+    <a href="#" class="fa fa-facebook"></a>
+<a href="#" class="fa fa-twitter"></a>
+<a href="#" class="fa fa-google"></a>
+<a href="#" class="fa fa-linkedin"></a>
+<a href="#" class="fa fa-youtube"></a>
+<a href="#" class="fa fa-instagram"></a>
             <h2>About Us</h2>
             <p>DonateLife.org is dedicated to promoting organ donation and saving lives. Learn about our mission and team.</p>
         </section>

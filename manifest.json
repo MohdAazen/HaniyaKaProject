@@ -1,0 +1,16 @@
+{
+    "name":"Organ Donation",
+    "short_name":"Org_Don",
+    "start_url":"index.html",
+    "display":"standalone",
+    "background_color":"black",
+    "scope":".",
+    "description":"This is Organ Donation App",
+    "icons":[
+        {
+            "src":"image/icon.png",
+            "sizes":"192X192",
+            "type":"image/png"
+        }
+    ]
+}
